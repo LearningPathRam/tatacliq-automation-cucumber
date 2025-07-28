@@ -1,6 +1,7 @@
+package com.example;
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello, Maven Project!");
+        System.out.println("Hello, Maven1 Project!");
     }
 
     public static String getGreeting() {
