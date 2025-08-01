@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import com.example.App;
 
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
@@ -21,5 +22,12 @@ public class AppTest {
         String expected = "Hello, World1!";
         String actual = App.getGreeting(); // Replace with actual method to test
         assertNotEquals(expected, actual);
+    }
+    @Test
+    public void testMainMethod3() {
+        // Assuming App has a method that returns a string
+        String expected = "Hello, Worl";
+        String actual = App.getGreeting(); // Replace with actual method to test
+        assertTrue(actual.contains(expected));
     }
 }
