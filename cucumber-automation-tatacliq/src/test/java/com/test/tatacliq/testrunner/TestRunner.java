@@ -7,8 +7,13 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"features"},
-        glue = {"com.test.tatacliq.steps"}
+        features = {"src/test/resources/features"},
+        glue = {"com.test.tatacliq.steps"},
+        dryRun = false,
+        // tags = "@smoke2",
+        name = "jeans",
+        // monochrome = true,
+        plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json"}
 
 )
 public class TestRunner {
