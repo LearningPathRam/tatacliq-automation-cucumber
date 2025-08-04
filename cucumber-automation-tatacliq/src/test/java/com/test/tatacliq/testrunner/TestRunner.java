@@ -10,8 +10,8 @@ import io.cucumber.junit.CucumberOptions;
         features = {"src/test/resources/features"},
         glue = {"com.test.tatacliq.steps"},
         dryRun = false,
-        // tags = "@smoke2",
-        name = "jeans",
+        tags = "@smoke",
+        // name = "jeans",
         // monochrome = true,
         plugin = {"pretty", "html:target/cucumber-reports.html", "json:target/cucumber.json"}
 
